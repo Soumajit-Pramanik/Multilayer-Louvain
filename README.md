@@ -7,15 +7,15 @@ This repository contains the code for our proposed "Multilayer Louvain" algorith
 
 ## Multilayer Louvain algorithm 
   + How to run? -
-    + Parameters - Update the following two paths in union.py as required,
+    + Parameters - Update the following two paths in Multilayer-Louvain.py as required,
       + Pathtosave - directory path to save result file 
       + networkpath - directory path from where to read network files
     + Command - 
-      ```python union.py``` 
+      ```python Multilayer-Louvain.py``` 
 
 ## Synthetic Network Generation
   + How to run? -
-    + Parameters - Update the following variables in generate_network.py,
+    + Parameters - Update the following variables in generate_networks.py,
       + list_alpha - Set of 'alpha' values for which networks need to be generated 
       + list_mu - Set of 'mu' values for which networks need to be generated
       + list_p - Set of 'p' values for which networks need to be generated
@@ -25,7 +25,7 @@ This repository contains the code for our proposed "Multilayer Louvain" algorith
       + k - Average degree of the individual network layers
       + maxk - Maximum degree of the individual network layers
     + Command -
-      ```python generate_network.py```
+      ```python generate_networks.py```
     + This generates 2-layer multilayer networks in the same folder with all possible combinations of the specified parameter values.
     + The format of the generated network files is the following -
       + number_of_layers
