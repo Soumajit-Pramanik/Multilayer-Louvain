@@ -9,4 +9,3 @@ numpy
 csv
 scikit-learn
 multiprocess
-pandas
