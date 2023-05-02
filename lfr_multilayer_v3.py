@@ -470,6 +470,7 @@ def usage():
 	print "-p2 : controls the fraction of nodes connected within coupling layer, from intra-layer communities"
 	print "-d : set density of interlayers edges"
 
+#Main function
 def main(argv):
 	if len(argv) != 10:
 		print "here",len(argv)
