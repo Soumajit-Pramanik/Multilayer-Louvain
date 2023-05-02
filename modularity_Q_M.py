@@ -1,3 +1,4 @@
+#Code for Q_M modularity
 modctr = 0
 
 def __modularity(commu, status, graph):
