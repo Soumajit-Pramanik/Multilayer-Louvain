@@ -1,3 +1,4 @@
+#Class definition
 class Status :
     node2com = {}
     total_weight = 0
