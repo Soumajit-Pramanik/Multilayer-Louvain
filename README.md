@@ -1,5 +1,5 @@
 # Multilayer Louvain
-This repository contains the code for our proposed "Multilayer Louvain" algorithm which is able to detect communities in multilayer networks. Simulataneously, we also provide the code to generate synthetic multilayer networks with ground truth communities. This kind of networks can be used for evaluating the performance of the community detection algorithms on multilayer networks.
+This repository contains the code for our proposed "Multilayer Louvain" algorithm which is able to detect communities in multilayer networks. Simultaneously, we also provide the code to generate synthetic multilayer networks with ground truth communities. This kind of networks can be used for evaluating the performance of the community detection algorithms on multilayer networks.
 
 ## Setup -
   + We require python 2.7 and a handful of other supporting libraries. To install the other dependencies, use: 
