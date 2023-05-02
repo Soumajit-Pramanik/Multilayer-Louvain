@@ -1,3 +1,4 @@
+#Generates synthetic networks
 import os, sys, time
 import subprocess
 
@@ -16,26 +17,6 @@ if not os.path.exists(new_dir + "_networks"):
 n=100
 k=6
 maxk=10
-
-
-# old experiments (lfr_multilayer_v1)
-# list_alpha = [0.4, 0.6, 0.8, 1.0]
-# list_p = [0.1,0.25,0.4,0.6,0.8]
-# list_density = [0.004, 0.01, 0.025, 0.04, 0.055, 0.07]
-# list_mu=[0.05, 0.20,0.75,0.55, 0.4, 0.6]
-
-# list_alpha = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-# list_mu = [0.05, 0.20, 0.4, 0.55, 0.6, 0.75]
-# list_p = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-# list_p1 = [0.1, 0.3, 0.5, 0.7, 0.8, 0.9, 1.0]
-# list_p2 = [0.1, 0.3, 0.5, 0.7, 0.8, 0.9, 1.0]
-
-# list_alpha = [0.8]
-# list_mu = [0.05]#, 0.20, 0.4, 0.55, 0.6, 0.75]
-# list_p = [0.7]
-# #list_density = [0.9]#, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-# list_p1 = [0.1]#, 0.3, 0.5, 0.7, 0.8, 0.9, 1.0]
-# list_p2 = [0.1]# 0.3, 0.5, 0.7, 0.8, 0.9, 1.0]
 
 # config1
 list_alpha = [0.1, 0.2, 0.4, 0.5, 0.6, 0.8, 0.9]
