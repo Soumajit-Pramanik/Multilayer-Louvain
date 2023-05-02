@@ -1,3 +1,4 @@
+#Code for 'Multilayer Louvain' algorithm
 import networkx as nx
 import random
 import pickle,os,sys
