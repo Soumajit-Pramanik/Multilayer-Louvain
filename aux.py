@@ -1,3 +1,4 @@
+#Auxiliary Functions
 from networkx import nx
 import sys
 from collections import defaultdict
