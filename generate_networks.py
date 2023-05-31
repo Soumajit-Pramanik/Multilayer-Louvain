@@ -3,6 +3,7 @@ import os, sys, time
 import subprocess
 from lfr_multilayer_v3 import create_layers
 
+nb_layers=2
 new_dir = sys.argv[1]
 dir_lfr = sys.argv[2]
 
@@ -14,64 +15,28 @@ if not os.path.exists(new_dir + "_networks"):
 	os.makedirs(new_dir + "_networks")
 
 
-#n=1000
-#k=11
-#maxk=30
 n=100
 k=6
 maxk=10
-nb_layers=2
+mu=0.05
 
 # config1
 list_alpha = [0.1, 0.2]
-#list_alpha = [0.1, 0.2]
-list_mu = [0.05]
-#list_p = [1.0,0.95,0.9,0.85,0.8,0.75,0.7]
+list_mu = [mu]
 list_p = [0.6,0.7]
 list_p1 = [0.3]
 list_p2 = [0.0]
 
-mu=0.05
+
 
 intra_params={}
 intra_params['n']=n
 intra_params['k']=k
 intra_params['maxk']=maxk
-intra_params['mu']=0.05
+intra_params['mu']=mu
 
 create_layers(dir_lfr, nb_layers, intra_params)
 
-#nb_com_layer , nb_link_layer = benchmark_lfr(0, dir_lfr, n, k, maxk, mu)
-#nb_com_layer , nb_link_layer = benchmark_lfr(1, dir_lfr, n, k, maxk, mu)
-
-# config2
-# list_alpha = [0.6]
-# list_mu = [0.05]
-# list_p = [0.6]
-# list_p1 = [0.1, 0.3, 0.6, 0.8]
-# list_p2 = [0.3]
-
-# config3
-# list_alpha = [0.6]
-# list_mu = [0.05]
-# list_p = [0.6]
-# list_p1 = [0.7]
-# list_p2 = [0.1, 0.3, 0.6, 0.8]
-
- 
-# config4
-# list_alpha = [0.6]
-# list_mu = [0.05]
-# list_p = [0.2,0.4,0.6,0.8]
-# list_p1 = [0.7]
-#list_p2 = [0.3]
-
-# config5
-# list_alpha = [0.6]
-# list_mu = [0.05, 0.2, 0.4, 0.55]
-# list_p = [0.6]
-# list_p1 = [0.7]
-# list_p2 = [0.3]
 
 
 i=0
