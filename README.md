@@ -17,17 +17,18 @@ This repository contains the code for our proposed "Multilayer Louvain" algorith
   + How to run? -
     + Parameters - Update the following variables in generate_networks.py,
       + list_alpha - Set of 'alpha' values for which networks need to be generated 
-      + list_mu - Set of 'mu' values for which networks need to be generated
       + list_p - Set of 'p' values for which networks need to be generated
       + list_p1 - Set of 'p1' values for which networks need to be generated 
       + list_p2 - Set of 'p2' values for which networks need to be generated 
       + n - Number of nodes in each layer
       + k - Average degree of the individual network layers
       + maxk - Maximum degree of the individual network layers
+      + mu - Probabilty of having edges across communities
     + Command -
-      ```python generate_networks.py <folder_name1> <folder_name2>```
+      ```python2.7 generate_networks.py <folder_name1> <folder_name2>```
     + This generates 2-layer multilayer networks in the folder named 'folder_name1_Networks' with all possible combinations of the specified parameter values. 'folder_name2' would contain the LFR networks.
-    + Note: The 'permission of execution' would be required to be given to the benchmark executable which generates the LFR networks.
+    + Note: The 'permission of execution' would be required to be given to the 'benchmark' executable which generates the LFR networks.
+    + The file names of the generated network files would be in the following format - network_<alpha>_<p>_<mu>_<p1>_<p2>
     + The format of the generated network files is the following -
       + number_of_layers
       
