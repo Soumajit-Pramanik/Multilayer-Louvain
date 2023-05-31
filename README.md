@@ -25,8 +25,8 @@ This repository contains the code for our proposed "Multilayer Louvain" algorith
       + k - Average degree of the individual network layers
       + maxk - Maximum degree of the individual network layers
     + Command -
-      ```python generate_networks.py```
-    + This generates 2-layer multilayer networks in the same folder with all possible combinations of the specified parameter values.
+      ```python generate_networks.py <folder_name1> <folder_name2>```
+    + This generates 2-layer multilayer networks in the folder named 'folder_name1_Networks' with all possible combinations of the specified parameter values. 'folder_name2' would contain the LFR networks.
     + The format of the generated network files is the following -
       + number_of_layers
       
